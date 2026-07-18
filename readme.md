@@ -2,6 +2,7 @@
 
 Lightweight speech enhancement guided target speech extraction in noisy scenarios.
 
+
 ## Requirements
 
 ```bash
@@ -52,3 +53,9 @@ bash eval_baseline.sh
 # Two-stage models (D-LGTSE, D-LGTSE-mDPTNet)
 bash eval_multistage.sh
 ```
+
+## Model Weights Download
+
+The model weights are available on Hugging Face:
+
+🔗 https://huggingface.co/zilinghuang/D-LGTSE
