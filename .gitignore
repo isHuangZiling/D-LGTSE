@@ -1,0 +1,35 @@
+# 模型权重文件
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.pb
+*.onnx
+*.bin
+*.safetensors
+*.hdf5
+
+# 大型数据文件
+*.npz
+*.npy
+*.pickle
+*.pkl
+
+# 数据集目录（如果有）
+data/
+datasets/
+weights/
+checkpoints/
+models/
+
+# Python 缓存
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# 日志和输出
+logs/
+outputs/
+runs/
+wandb/
+*.tar
