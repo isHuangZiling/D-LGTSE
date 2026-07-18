@@ -12,12 +12,11 @@ pip install -r requirements.txt
 
 ## Dataset
 
-SCP files for WHAM! dataset are provided in dataset_scp/:
+SCP files for WHAM! dataset are provided in `dataset_scp/whamscp/`:
 
-dataset_scp/whamscp/
-├── tr/          # training set
-├── cv/          # validation set
-└── tt/          # test set
+- `tr/` - training set
+- `cv/` - validation set  
+- `tt/` - test set
 
 ## Data Preparation for Distortion-Aware Training
 Before Stage 2 training, generate denoised training data using the pre-trained GTCRN from Stage 1:
