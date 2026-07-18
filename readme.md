@@ -30,7 +30,7 @@ This produces the denoised SCP files (prefixed with D_) used for distortion-awar
 
 ## Training
 
-Three-stage training:
+multi-stage training:
 
 ```bash
 # Stage 1: GTCRN pre-training
@@ -50,7 +50,7 @@ GTCRN code adapted from: [Xiaobin-Rong/gtcrn](https://github.com/Xiaobin-Rong/gt
 # Baseline models (SEF-PNet, CIE-mDPTNet)
 bash eval_baseline.sh
 
-# Two-stage models (D-LGTSE, D-LGTSE-mDPTNet)
+# Multi-stage models (D-LGTSE, D-LGTSE-mDPTNet)
 bash eval_multistage.sh
 ```
 
