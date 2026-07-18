@@ -52,14 +52,3 @@ bash eval_baseline.sh
 # Two-stage models (D-LGTSE, D-LGTSE-mDPTNet)
 bash eval_multistage.sh
 ```
-
-## Pre-trained Weights
-
-WHAM! checkpoints are provided in `checkpoint_wham!/`:
-
-checkpoint_wham!/
-├── cpt_cie-mdpnet/          # CIE-mDPTNet
-├── cpt_dlgtse/              # D-LGTSE (SEF-PNet backbone)
-├── cpt_dlgtse-mdptnet/      # D-LGTSE-mDPTNet
-├── cpt_gtcrn/               # GTCRN
-└── cpt_sefpnet/             # SEF-PNet baseline
