@@ -1,6 +1,6 @@
 # D-LGTSE
 
-Lightweight speech enhancement guided target speech extraction in noisy scenarios.
+**Paper:** [Lightweight speech enhancement guided target speech extraction in noisy scenarios](https://www.sciencedirect.com/science/article/pii/S0885230826000896)
 
 
 ## Requirements
@@ -24,12 +24,11 @@ Before Stage 2 training, generate denoised training data using the pre-trained G
 ```bash
 bash separate_se.sh
 ```
-
-This produces the denoised SCP files (prefixed with D_) used for distortion-aware training.
+After the denoised speech is generated, create the corresponding `D_*.scp` files and use them for Stage 2 training.
 
 ## Training
 
-multi-stage training:
+Multi-stage training:
 
 ```bash
 # Stage 1: GTCRN pre-training
@@ -52,6 +51,20 @@ bash eval_baseline.sh
 # Multi-stage models (D-LGTSE, D-LGTSE-mDPTNet)
 bash eval_multistage.sh
 ```
+
+## Experimental Results
+
+Results on the WHAM! dataset (8 kHz).
+
+| ID | Method | SI-SDR ↑ | PESQ ↑ | STOI ↑ |
+|:--:|:-------|---------:|--------:|--------:|
+| W0 | Unprocessed | -4.49 | 1.43 | 62.77 |
+| W1 | SEF-PNet | 8.28 | 2.26 | 86.09 |
+| **W2** | **D-LGTSE (Offline)** | **8.78** | **2.29** | **86.68** |
+| W3 | CIE-mDPTNet | 10.44 | 2.50 | 89.85 |
+| **W4** | **D-LGTSE-mDPTNet (Offline)** | **11.74*** | **2.62*** | **91.53*** |
+
+\* *p* < 0.001 (paired *t*-test vs. CIE-mDPTNet).
 
 ## Model Weights Download
 
