@@ -73,4 +73,8 @@ The model weights are available on Hugging Face:
 🔗 https://huggingface.co/zilinghuang/D-LGTSE
 
 ## Contact
-📧 [hzlkycg111@163.com](mailto:hzlkycg111@163.com)
+
+For any questions, please contact:
+
+📧 hzlkycg111@163.com
+
